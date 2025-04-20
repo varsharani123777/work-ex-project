@@ -1,0 +1,202 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+crossorigin="anonymous">
+<link rel="stylesheet" href="slide.css">
+</head>
+<body>
+  <table border="0" width="50%"   height="">
+<tr>
+<th width="5%" bgcolor="transparent" class="links">
+<div class="dropdown" >
+  <a href="slide.html"><span >Home</span></a>
+</div></th> 
+<th width="5%" bgcolor="transparent" class="links"><div class="dropdown" >
+<a href="aboutdei.html"><span>AboutDEI</span></a>
+</div>
+</th>
+<th width="5%" bgcolor="transparent" class="links"><div class="dropdown" >
+<a href="Aboutus.html"><span>About us</span></a>
+</div>
+</th>
+<th width="5%" bgcolor="transparent" class="links"><div class="dropdown" >
+<a href="gallery.html"><span>Cultural</span></a>
+</div>
+</th>
+<th width="5%"bgcolor="transparent" class="links">
+<div class="dropdown" >
+<a href="course.html"><span>Courses</span></a>
+
+</div></th>
+<th width="5%"bgcolor="transparent" class="links"><div class="dropdown" ><a href="login.html"><span>Login/Register</span></a>
+</div></th>
+  </table>
+<TABLE>
+<TR>
+<TD width="30%" margin-top="10px" > <IMG SRC=image/logo.jpeg HEIGHT=35% WIDTH=35% ></TD><TD width="60%" CLASS="zoom-in-left">
+<FONT SIZE=15 COLOR=INDIGO FACE=ALGERIAN > DAYALBAGH EDUCATIONAL INSTITUTE</FONT><BR>
+
+</FONT>
+</TD>
+</TR>
+</TABLE>
+<MARQUEE Behavior=alternate><I><FONT FACE=Edwardian Script ITC COLOR=PURPLE><B>  DEI Now an ISO 21001:2018 Certified & NAAC A+ Accredited Institution Say No to Ragging</B></FONT></I></MARQUEE>
+<HR SIZE=10% WIDTH=100% COLOR=RED>
+<HR SIZE=5% WIDTH=100% COLOR=GREEN>
+<HR SIZE=10% WIDTH=100% COLOR=RED>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="image/dei1.jpg" style="width:100% ">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="image/dei2.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div> 
+ <div class="mySlides fade"> 
+    <div class="numbertext">3 / 5</div>
+    <img src="image/dei3.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="image/dei4.jpg" style="width:100%">
+    <div class="text">Caption Four</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5/5</div>
+    <img src="image/dei5.jpg" style="width:100%">
+    <div class="text">Caption Five</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5/5</div>
+    <img src="image/dei6.jpg" style="width:100%">
+    <div class="text">Caption Six</div>
+  </div>
+
+</div>
+
+ <!-- <div class="container-fluid px-lg-4 mt-4">
+    <div class="swiper swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="image/dei1.jpg" class="w-100  d-block" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/dei2.jpg" class="w-100  d-block" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/dei3.jpg" class="w-100  d-block" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/dei4.jpg" class="w-100  d-block" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/dei5.jpg" class="w-100  d-block" />
+          </div>
+          <div class="swiper-slide">
+            <img src="image/dei6.jpg" class="w-100  d-block" />
+          </div>
+      </div>
+    </div>
+  </div> -->
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+<HR SIZE=5% WIDTH=100% COLOR=RED>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+crossorigin="anonymous"></script>
+<!-- <script> var swiper = new Swiper(".swiper-container", {
+          spaceBetween: 30,
+          effect: "fade",
+          loop :true,
+          autoplay:{
+             delay:2000,
+             disableOnInteraction: false,
+          },
+       });
+      </script> -->
+
+<!-- <table border="0" width="100%"  bgcolor="white" >
+<TH CLASS="zoom" width="22.33%"><A HREF=RULE.HTML><IMG SRC="tc1.JPG"  width="90%" ></A></TH>
+<TH CLASS="zoom" width="22.33%"><A HREF=ABOUTUS.HTML><IMG SRC="tc2.jpg"  width="90%"></A></TH>
+<TH  CLASS="zoom"  width="22.33%"><A HREF=NOTICE.HTML><IMG SRC="tc3.jpg"  width="90%"></A></TH>
+</TR></TABLE>-->
+<div class="container-fluid bg-white mt-5">
+  <div class="row">
+    <div class="col-lg-3 p-4">
+      <h3 class="h-font fw-bold fs-3">DEI</h3>
+      <p>DEI's education model emphasizes experiential learning, combining
+         theoretical knowledge with practical applications and 
+         real-world experience.</p>
+    </div>
+    <div class="col-lg-4 p-4">
+      <h5 class="mb-3">Links</h5>
+      <a href="slide.html" class="d-inline-block mb-2 text-dark text-decoration-none">Home</a> <br>
+      <a href="aboutdei.html" class="d-inline-block mb-2 text-dark text-decoration-none">AboutDEI</a><br>
+      <a href="Aboutus.html" class="d-inline-block mb-2 text-dark text-decoration-none">Aboutus</a> <br>
+      <a href="Gallery.html" class="d-inline-block mb-2 text-dark text-decoration-none">Cultural</a><br>
+      <a href="course.html" class="d-inline-block mb-2 text-dark text-decoration-none">Courses</a>
+    </div>
+       <div class="col-2 p-2">
+      <h5 class="mb-3">Quick Links</h5>
+      <a href="Notice.html" class="d-inline-block mb-2 text-dark text-decoration-none">NOTICE</a> <br>
+      <a href="Rules.html" class="d-inline-block mb-2 text-dark text-decoration-none">Rule & Regulations</a><br>
+      <a href="term.HTML" class=" d-inline-block mb-2 text-dark text-decoration-none">term & conditions</a> <br>
+      <a href="Gallery.html" class=" d-inline-block mb-2 text-dark text-decoration-none">Spots</a><br>
+   </div>
+    <div class="col-lg-3 p-3">
+      <h5 class="mb-3">Follow us</h5>
+      <h6>Dayalbagh Educational Institute</h6>
+       <h6>Dayalbagh, Agra UP - 282005</h6>
+      <h6>INDIA |Phone: +91-0562-2801545,Fax: +91-0562-2801226</h6>
+      <a href="mailto:admin@dei.ac.in">Email: admin@dei.ac.in</a>
+      <h6>Admission related enquiries : +91-0562-2570372.</h6>
+      <a href="mailto:deiadmission.agra@gmail.com">deiadmission.agra@gmail.com</a>
+    </div>
+  </div>
+</div>
+<TABLE WIDTH=100%>
+<TR BGCOLOR="black"><TH>
+<marquee behavior="alternate"><FONT COLOR="white">Developed By ninja-code...@varsha</FONT></marquee>
+</TH></TR></TABLE><br></body>
+</html> 

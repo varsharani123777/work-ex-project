@@ -1,0 +1,154 @@
+style>
+  *{
+     background-color:gray;
+     color: rgb(53, 53, 94);
+  }
+ #button1{
+   padding:10px;
+   background-color: transparent;
+   font-size:10px;
+   border-radius:10px;
+   font-weight:bolder;
+ }
+    #button2{
+   padding:10px;
+   background-color:chartreuse;
+   font-size:10px;
+   border-radius:10px;
+   font-weight:bolder;
+ }
+#button1:hover{
+background-color:yellow;
+}
+#button2:hover{
+background-color:green;
+}
+.checked
+{
+  color:aquamarine;
+}
+.link
+{
+border-radius:10px;
+}
+.links
+{
+border-radius:10px;
+}
+.links:hover
+{
+background-color:#bbb;
+}
+.zoom
+{
+transition:transform 0.6s;
+}
+.zoom:hover
+{
+transform:scale(1.2);
+}
+.dropdown {
+    position:absolute;
+    margin: 24px;
+    margin-left: 610px;
+    gap: 13px;
+
+}
+  
+.dropdown-content {
+  display: none;
+  position : absolute;
+  background-color:rgb(53, 53, 94);
+  min-width:90px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,2);
+ padding: 17px  16px;
+  color:black;
+}
+
+ .dropdown:hover  .dropdown-content {
+  display :contents;
+}
+.zoom{
+transition : transform .2s;
+width: 150px;
+height: 150px;
+margin: 0 250px;
+}
+.zoom-in-left:hover {
+ transform:scale (1.07);
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.col-2 {
+    transform: translateX(-120px);
+    margin-top: 10px;
+}
+.col-lg-4{
+    transform: translateX(25px);
+    
+}
+.col-lg-3 {
+    transform: translateX(-20px);
+    margin-top: 0px;
+}

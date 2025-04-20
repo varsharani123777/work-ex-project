@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Add this if not in style.css */
+    .input-group {
+      position: absolute;
+      width: 280px;
+      transition: 0.5s;
+    }
+    .submit-btn {
+      width: 100%;
+      padding: 10px;
+      background: linear-gradient(to right, #ff416c, #ff4b2b);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .message {
+      text-align: center;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="showLogin()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="showRegister()">Register</button>
+      </div>
+
+      <div class="social-icons">
+        <a href="https://www.facebook.com/Dayalbagh.agra/"><img src="fb.png"></a>
+        <a href="https://x.com/deidayalbagh?lang=en"><img src="tw.png"></a>
+        <a href="https://www.dei.ac.in/dei/"><img src="gp.png"></a>
+      </div>
+
+      <!-- Login Form -->
+      <form id="loginForm" class="input-group" onsubmit="handleLogin(event)">
+        <input type="text" class="input-field" id="loginUsername" placeholder="Enter username" required>
+        <input type="password" class="input-field" id="loginPassword" placeholder="Enter Password" required>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button type="submit" class="submit-btn" >Login</button>
+        <button onclick="Login()">Login</button>
+      </form>
+
+      <!-- Register Form -->
+      <form id="registerForm" class="input-group" style="left: 450px;" onsubmit="handleRegister(event)">
+        <input type="text" class="input-field" id="registerUsername" placeholder="Enter User Id" required>
+        <input type="text" class="email" placeholder="Enter Email ID" required>
+        <input type="password" class="input-field" id="registerPassword" placeholder="Enter Your Password" required>
+        <input type="checkbox" class="check-box"><span>I agree to terms & conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+
+      <div class="message" id="messageBox"></div>
+    </div>
+  </div>
+
+  <script>
+    const loginForm = document.getElementById("loginForm");
+    const registerForm = document.getElementById("registerForm");
+    const messageBox = document.getElementById("messageBox");
+    const btn = document.getElementById("btn");
+
+    const users = {}; // Store users in memory
+
+    function showLogin() {
+      loginForm.style.left = "50px";
+      registerForm.style.left = "450px";
+      btn.style.left = "0px";
+      messageBox.textContent = "";
+    }
+
+    function showRegister() {
+      loginForm.style.left = "-400px";
+      registerForm.style.left = "50px";
+      btn.style.left = "100px";
+      messageBox.textContent = "";
+    }
+
+    function handleRegister(event) {
+      event.preventDefault();
+      const username = document.getElementById("registerUsername").value;
+      const password = document.getElementById("registerPassword").value;
+
+      if (users[username]) {
+        messageBox.textContent = "User already exists!";
+        messageBox.style.color = "red";
+      } else {
+        users[username] = password;
+        messageBox.textContent = "Registered successfully!";
+        messageBox.style.color = "green";
+        registerForm.reset();
+      }
+    }
+
+    function handleLogin(event) {
+      event.preventDefault();
+      const username = document.getElementById("loginUsername").value;
+      const password = document.getElementById("loginPassword").value;
+
+      if (users[username] && users[username] === password) {
+        messageBox.textContent = "Login successful!";
+        messageBox.style.color = "green";
+        loginForm.reset();
+      } else {
+        messageBox.textContent = "Invalid username or password.";
+        messageBox.style.color = "red";
+      }
+
+      function Login() {
+         window.location.href = "slide.html"; // your internal or external page
+      }
+    }
+  </script>
+</body>
+</html>
